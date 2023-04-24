@@ -1,21 +1,26 @@
-#include <stdio.h>
-/**
-  *mai - Entry point
-  *prints the alphabet in lowercase
-  *Return: Always 0(success)
-  */
-int main(void)
-{
-	int n = 97;
-
-	while (n <= 122)
-	{
-		if (n == 101 || n == 133)
-		{
-			n++;
-			continue;
-		}
-		putchar('\n');
-		return (0);
-	}
-}
+#include <stdio.h> 
+ #include <time.h> 
+ #include <stdlib.h> 
+  
+ /** 
+  * main - Entry point 
+  * 
+  * Return: always 0 (success) 
+  */ 
+  
+ int main(void) 
+ { 
+         char low, e, q; 
+  
+         e = 'e'; 
+         q = 'q'; 
+  
+         for (low = 'a'; low <= 'z'; low++) 
+         { 
+                 if (low != e && low != q) 
+                         putchar(low); 
+         } 
+         putchar('\n'); 
+  
+         return (0); 
+ }
