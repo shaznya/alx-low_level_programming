@@ -1,26 +1,21 @@
-#include <stdio.h> 
- #include <time.h> 
- #include <stdlib.h> 
-  
- /** 
-  * main - Entry point 
-  * 
-  * Return: always 0 (success) 
-  */ 
-  
- int main(void) 
- { 
-         char low, e, q; 
-  
-         e = 'e'; 
-         q = 'q'; 
-  
-         for (low = 'a'; low <= 'z'; low++) 
-         { 
-                 if (low != e && low != q) 
-                         putchar(low); 
-         } 
-         putchar('\n'); 
-  
-         return (0); 
- }
+#include <stdio.h>
+/**
+  *main - Entry point
+  *Prints alphabet in lowercase
+  *Return: Always 0
+  */
+int main(void)
+{
+	char n, m, o;
+
+	m = 'e';
+	o = 'q';
+
+	for (n = 'a'; n <= 'z'; n++)
+	{
+		if (n != m || n != o)
+			putchar(n);
+	}
+	putchar('\n');
+	return (0);
+}
