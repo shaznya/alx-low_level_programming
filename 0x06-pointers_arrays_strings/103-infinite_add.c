@@ -28,8 +28,9 @@ void rev_string(char *n)
   *infinite_add - add two numbers
   *@n1: digit
   *@n2: digit
-  *@r: buffer
-  *@size_r: size
+  *@r: pointer
+  *@size_r:buffer size
+  *Return: char
   */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
