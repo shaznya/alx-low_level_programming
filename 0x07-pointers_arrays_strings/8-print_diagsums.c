@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
-  *print_diagsums - sum of the two diagonals of a square 
+ *print_diagsums - sum of the two diagonals
   *@a: pointer
   *@size: integger
   *Return: 0
