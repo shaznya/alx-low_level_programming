@@ -1,8 +1,7 @@
 #include "main.h"
 /**
-  *print_chessboard -  prints the chessboard
-  *@a: rows
-  *@8: columns
+  *print_chessboard - chessboard
+  *@a: array
   *Return: 0
   */
 void print_chessboard(char (*a)[8])
