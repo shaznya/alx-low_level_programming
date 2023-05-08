@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-  *_strpbrk - searches a string 
-  *@S: pointer to string
+  *_strpbrk - searches a string
+  *@s: pointer to string
   *@accept: ouput
   *Return: char
   */
