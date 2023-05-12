@@ -3,7 +3,7 @@
 /**
   *main -  program that prints its name
   *@argc: number of arguments
-  *@agrv: array of arguments
+  *@argv: array of arguments
   *Return: void
   */
 int main(int argc  __attribute__((unused)), char *argv[])
