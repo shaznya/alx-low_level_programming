@@ -8,18 +8,14 @@
   */
 char *create_array(unsigned int size, char c)
 {
-	int i = 0;
+	char *str;
+	unsigned int i;
 
-	*c = (char *) malloc(size * sizeof(char));
+	str = malloc(sizeof(char) * size);
+	if (size == 0 || str == NULL)
+		return (NULL);
 
-		for (i = 0; i < size; i++)
-		{
-			if(c[i] == c);
-			{
-			return (*c);
-			}
-			else
-			{
-			return (NULL);
-			}
+	for (i = 0; i < size; i++)
+		str[i] = c;
+	return (str);
 }
