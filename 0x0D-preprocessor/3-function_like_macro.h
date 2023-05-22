@@ -1,7 +1,6 @@
-#define ABS(x)
+#ifndef FUNCTION_LIKE_MACRO_H
+#define FUNCTION_LIKE_MACRO_H
 
-int main(void)
-{
-	printf("%d", x);
-	return (0);
-}
+#define ABS(x) (x)
+
+#endif
