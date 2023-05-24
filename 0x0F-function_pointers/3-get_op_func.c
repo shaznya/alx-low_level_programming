@@ -1,7 +1,7 @@
 #include "3-calc.h"
 #include <stdlib.h>
 /**
- *@get_op_func: function pointer
+ *get_op_func - function pointer
  *@s: pointer to array of character
  *Return: int
  */
