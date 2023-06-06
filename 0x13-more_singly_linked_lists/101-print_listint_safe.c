@@ -10,6 +10,7 @@ size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *current = head;
 	size_t count = 0;
+	int loop_detected = 0;
 
 	while (current != NULL)
 	{
@@ -18,9 +19,17 @@ size_t print_listint_safe(const listint_t *head)
 
 		if (current <= current->next)
 		{
-			exit(98);
+			loop_detected = 1;
+			break;
 		}
 		current = current->next;
 	}
+	if (loop_detected)
+	{
+		printf("Error: Infinite loop detected\n");
+		exit(98);
+	}
+	current = current->next;
+
 	return (count);
 }
